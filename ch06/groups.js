@@ -20,8 +20,15 @@ class Group {
       this.group.splice(this.group.indexOf[value],1)
     }
   }
-  has() {
-    
+  has(value) {
+    return this.group.includes(value)
+  }
+  static from(iterableObj) {
+    let newGroup = new Group()
+    for (let item of iterableObj) {
+      newGroup.add(item) 
+    }
+    return newGroup
   }
 }
 
