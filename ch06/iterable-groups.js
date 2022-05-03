@@ -42,7 +42,7 @@ class GroupIterator {
     let value = this.group[this.index]
     this.index++
 
-    return {value, done: false};
+    return {value, done: false}
   }
 }
 
@@ -52,7 +52,7 @@ Group.prototype[Symbol.iterator] = function() {
 
 
 for (let value of Group.from(["a", "b", "c"])) {
-  console.log(value);
+  console.log(value)
 }
 // → a
 // → b
