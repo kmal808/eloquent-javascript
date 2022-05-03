@@ -31,9 +31,9 @@ class Group {
 }
 
 class GroupIterator {
-  constructor(obj) {
+  constructor(param) {
     this.index = 0
-    this.group = obj.group
+    this.group = param.group
   }
 
   next() {
